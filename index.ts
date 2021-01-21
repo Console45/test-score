@@ -52,7 +52,7 @@ async function main() {
       }
     }
     for (let id in studentAnswer) {
-      console.error({ [id]: score });
+      console.log({ [id]: score });
     }
   }
 }
