@@ -35,7 +35,7 @@ async function main() {
   let studentAnswers: Array<any> = [];
 
   removeWhiteSpaces(answers.student_answers)
-    .match(/([0-9]+)([TFx]+)/g)!
+    .match(/([0-9]+)([tfxTFX]+)/g)!
     .forEach(answer => {
       studentAnswers.push({ [answer.substring(0, 3)]: answer.substring(3) });
     });
