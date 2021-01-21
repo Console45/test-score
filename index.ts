@@ -48,7 +48,7 @@ async function main() {
     let score: number = 0;
 
     for (let id in studentAnswer) {
-      // loop true the correct answers, compare with the student answers and mark them
+      // loop through the correct answers, compare with the student answers and mark them
       for (let i: number = 0; i < correctAnswers.length; i++) {
         if (studentAnswer[id][i] !== correctAnswers[i]) {
           if (studentAnswer[id][i] == "x") score += 0;
